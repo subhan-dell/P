@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Home</a>
+            <ul class="navbar-menu">
+                <li><a href="#budget-section">Add Budget</a></li>
+                <li><a href="#expense-section">Add Expense</a></li>
+                <li><a href="#history-section">Expense History</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Budget Management Tool</h1>
+    <div class="main">
+        
+        <div class="budget-container"> 
+            <div class="add-container">
+
+                <div class="add-budget-container">
+                    <h4>Add Budget</h4>
+                    <form>
+                        <label for="budget">Budget:</label>
+                        <input type="text" id="budget">
+                        <button id="addBudgetBtn">Add Budget</button>
+                    </form>
+                </div>
+                <div class="add-expense-container">
+                    <h4>Add Expense</h4>
+                    <form>
+                        <label for="expense">Expense Title:</label>
+                        <input type="text" id="expense"><br><br>
+                        <label for="amount">Amount:</label>
+                        <input type="text" id="amount">
+                        <button id="addExpenseBtn">Add Expense</button>
+                    </form>
+                </div>
+                <button id="resetBtn">Reset All</button>
+            </div>
+
+            <div class="display-container">
+                <div class="heading">
+                    <div>Total Budget: <span id="totalBudget">0</span></div>
+                    <div>Total Expenses: <span id="totalExpenses">0</span></div>
+                    <div>Budget Left: <span id="budgetLeft">0</span></div>
+                </div>
+                <hr>
+                <div class="table-container">
+                    <h5>Expense History:</h5>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Expense Name</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
